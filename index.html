@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>Woo Shop Channel</title>
 </head>
-<body>
+<body id="test">
 </body>
 </html>
 
@@ -83,8 +83,8 @@ function CLICK() {
     </div>
 
     <div>
-       <a class="NEWS8" onclick="CLICK()" href="#"> April 10th: Way better wii shop revival by someone else.</a>
-
+       <a class="NEWS8" onclick="CLICK(); lolmagic();" href="#"> April 10th: Way better wii shop revival by someone else.</a>
+<script>function lolmagic() { var sound = new Audio("https://chrisplayzwii.github.io/for-compatibility/sounds/wiishopsounds/7.wav") sound.play(); setTimeout(reloadfr,700); document.getElementById("test").style.backgroundColor="#323232"; } function reloadfr() {window.location.href="https://wiimart.org";}</script>
     </div>
         <div>
        <a class="NEWS9" onclick="CLICK()" href="/notice.html"> May 29th: Notice about the Woo Shop Channels Future.</a>
@@ -151,6 +151,9 @@ function CLICK() {
             margin: 8px;
             text-align:center;
             cursor: url(Wii-curser.cur), default;
+
+             /* for the link trtrans lol */
+             transition:.3s ease-in-out;
         }
     
         .SHOPTITLE {
@@ -353,17 +356,19 @@ function CLICK() {
             text-align:center;
             position: relative;
             max-block-size: 5px;
-            margin-top: 10px;
-            margin-bottom: 20px;
+            margin-top: 15px;
+            margin-bottom: 25px;
             left: 0px;
             padding: 10px;
             text-decoration: wavy;
             cursor: url(Wii-curser.cur), default;
-            color:#00bfff;
+            /*color:#00bfff;*/
+          color:#ffb700;
         }
 
         .NEWS8:hover {
-            color:#1d99c2;
+           /* color:#1d99c2;*/
+             color:#00bfff;
         cursor: url(Wii-curser.cur), default;
     }
     .NEWS9 {
